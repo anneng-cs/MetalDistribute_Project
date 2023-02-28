@@ -159,7 +159,7 @@ header{
 
 
 .hero-container{
-    height: 90vh;
+    height: 80vh;
 }
 
 .hero-container-box{
@@ -407,8 +407,8 @@ main{
     grid-template-columns: repeat(3, 1fr);
     gap: 2em;
     color: #ffffff;
-    /* position: sticky;
-    bottom: 0; */
+    position: relative;
+    bottom: 0;
     width: 100%;
 }
 .main-footer section{
@@ -417,7 +417,7 @@ main{
 }
 
 .contact-info p{
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 .ul-links a, .nav-logo-footer h3, .contact-info p, .contact-info h3{
@@ -426,6 +426,16 @@ main{
 
 }
 
+.main-footer-contact{
+    background-color: #333;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: #ffffff;
+    padding: 2em;
+    /* position: relative; */
+    /* bottom: 0; */
+    width: 100%;
+}
 
 
 
@@ -518,6 +528,7 @@ main{
 /*--------------------------------------- contact me page ------------------------------------ */
 .form-body{
     margin: auto;
+    background-image: none;
 }
 .form-title {
 	font-weight: 300;
@@ -527,12 +538,11 @@ main{
 
 .out{
     width: 60%;
-    height: 70%;
-
+    height: 100%;
 }
 
 .container {
-	background-color:#fff;
+	background-color:#b8b8b8;
 	border-radius: 2em;
     max-width: 100%;
 	overflow: hidden;
@@ -540,6 +550,7 @@ main{
     height: 70%;
     top: 15%;
     left: 20%;
+    box-shadow: 0 0 3.5em rgba(0, 0, 0, 0.997);
 
 }
 
@@ -710,7 +721,7 @@ main{
 
     }
 
-     .history-img{
+    .history-img{
        display: none;
     }
     .history-circle{
@@ -752,21 +763,16 @@ main{
         .sub-right-container h3{
             font-size: 0.9em;
         }
-
-
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .hero-container, .hero-container-box{
+        height: 95vh;
+        /* justify-items: center; */
+        align-items: center;
 
-    /* Home page */
-    /* .hero-container-box{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas:
-        "right"
-        "left";
-     } */
+    }
+
     .left{
         grid-area: left;
         margin-bottom: 9em;
@@ -779,7 +785,7 @@ main{
 
      /* main info */
      .main-about-text{
-        margin-top: 10em;
+        margin-top: 5em;
      }
 
        /* PRODUCTS PAGE */
@@ -799,6 +805,12 @@ main{
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero-container, .hero-container-box{
+        height: 95vh;
+        /* justify-items: center; */
+        align-items: center;
+
+    }
 
     /* .hero-container-box{
         display: grid;
@@ -833,9 +845,9 @@ main{
 
      }
      /* main info */
-     .main-about-text{
-        margin-top: 10em;
-     }
+     /* .main-about-text{
+        margin-top: 5em;
+     } */
 
      /* PRODUCTS PAGE */
     .img-bottom{
@@ -857,14 +869,22 @@ main{
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
     /* HOME PAGE */
+    .hero-container, .hero-container-box{
+        height: 95vh;
+        /* justify-items: center; */
+        align-items: center;
 
-     .hero-container-box{
-        margin-top: 17%;
     }
+
     .right button{
         margin: 2em;
         width: 35%;
     }
+
+     /* main info */
+     .main-about-text{
+        margin-bottom: 2em;
+     }
 
     /* PRODUCTS PAGE */
     .img-bottom{
@@ -879,6 +899,12 @@ main{
 
     .section-subject-right{
         margin-top: 2.4em;
+    }
+    .history-text,  .inner-about p{
+        font-size: 2em;
+    }
+    .inner-about h1{
+        font-size: 3em;
     }
 
 }
@@ -919,6 +945,12 @@ main{
 
     .section-subject-right{
         margin-top: 3.4em;
+    }
+    .history-text,  .inner-about p{
+        font-size: 2em;
+    }
+   .inner-about h1{
+        font-size: 3em;
     }
 }
 
