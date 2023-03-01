@@ -16,27 +16,22 @@ font-family: 'Space Mono', monospace; */
 }
 html{
     background-color:rgba(247, 247, 247, 0.5);
-    max-width: 1900px;
-    
+    max-width: 1900px; 
 }
 
 body {
     font-size: 10px;
-    height: 100vh;
-    width: 100%;
+    height: 70vh;
+    width: 80%;
     background-color:rgb(151, 146, 146);
     background: url(/images/Login\ Page\ Mobile\ Prototype.png);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Nunito', sans-serif;
     min-width: 310px;
-}
-/* main {
-    width: 70%;
     margin: 0 auto;
-} */
-
-
+   
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family:'Didact Gothic', sans-serif;
@@ -79,9 +74,10 @@ header{
     grid-template-areas: "logo links search";
     margin-left: 0.7em;
     margin-right: 1.2em;
+    padding: 2em;
 }
 
-.nav-logo h3{
+.nav-logo h1{
     font-family: 'Bree Serif', serif;
     text-align: left;
     margin-top: 1em;
@@ -108,14 +104,14 @@ header{
 .ul-links li a{
     text-decoration: none;
     color: white;
-    font-size: 0.8em;
+    font-size: 2em;
     padding: 0.5em;
     transition: all 400ms ease-in-out;
 }
 
 .ul-links li a:hover{
     color:rgb(8, 55, 246);
-    font-size: 0.8em;
+    font-size: 1.8em;
 }
 
 .hero-container{
@@ -128,6 +124,9 @@ header{
    grid-template-areas: "left right";
    width: 70%;
    margin: 0 auto;
+   height: 50vh;
+   align-items: center;
+   margin-bottom: 4.4em;
 }
 
 .left{
@@ -159,7 +158,9 @@ header{
 
 
 .hero-container{
-    height: 80vh;
+    /* height: 80vh;
+} */
+ max-height: 100%;
 }
 
 .hero-container-box{
@@ -222,14 +223,20 @@ header{
 
 
  /* ----------------- About text below hero image --------------- */
+ main{
+     border: 2px solid transparent;
+     box-shadow: 0 0 3.5em rgba(0, 0, 0, 0.997);
+ }
 .main-about-text{
     display: flow-root;
-    margin: 1.5em;
+    margin: 0.5em;
     width: 100%;
 }
 .inner-about{
     width: 70%;
     margin: 0 auto;
+    padding: 0.5em;
+    margin-top: 2em;
 }
 
 .main-about-text .about-text-left {
@@ -258,6 +265,7 @@ header{
  .main-history{
      width: 100%;
      background-color:rgba(181, 181, 181, 0.235);
+     margin-top: 5em;
  }
 .main-history-text {
     display: flow-root;
@@ -288,8 +296,6 @@ header{
 
 }
 
-
-
 .history-text{
     position: absolute;
     top: 30%;
@@ -302,9 +308,7 @@ header{
 }
 
  /* ----------------- Sample work below history --------------- */
-main{
-    text-align: center;
-}
+
 .project{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -371,12 +375,12 @@ main{
 .main-subscribe{
     background: url(/images/Login\ Page\ Mobile\ Prototype.png);
     height: 15em;
-    /* background-color: rgba(155, 155, 155, 0.497); */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "left right";
     position: relative;
-    padding-bottom: 6em;
+    padding-top: 2em;
+    padding-bottom: 3em;
     padding-left: 0.5em;
 }
 
@@ -689,12 +693,12 @@ main{
 
 /* --------------------Media Queries ---- Responsive Development ---------------------- */
 
-
+/* 
 
 @media only screen and (max-width: 480px) {
     /* hero container */
 
-    .hero-container-box{
+    /* .hero-container-box{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
@@ -707,15 +711,15 @@ main{
      }
      .box-right{
         margin: 4em;
-     }
+     } */
 
      /* main info */
-     .main-about-text{
+     /* .main-about-text{
         margin-top: 10em;
-     }
+     } */
 
      /* history container */
-     .main-history-text {
+     /* .main-history-text {
         position: relative;
         padding: 7em;
 
@@ -733,10 +737,10 @@ main{
         top: 20%;
         left: 5%;
         padding-right: 5%;
-    }
+    } */
 
     /* subscribe area */
-
+/* 
     .main-subscribe{
         display: grid;
         grid-template-columns: 1fr;
@@ -746,9 +750,9 @@ main{
         "right";
         position: relative;
         height: 25em;
-    }
+    } */
         /* PRODUCTS PAGE */
-        .img-bottom{
+        /* .img-bottom{
             position: relative;
         }
         .img-top{
@@ -762,15 +766,13 @@ main{
         }
         .sub-right-container h3{
             font-size: 0.9em;
-        }
-}
+        } */
+/* }  */
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .hero-container, .hero-container-box{
+    /* .hero-container, .hero-container-box{
         height: 95vh;
-        /* justify-items: center; */
         align-items: center;
-
     }
 
     .left{
@@ -780,16 +782,16 @@ main{
        
     .right{
         grid-area: right;
-    }
+    } */
 
 
      /* main info */
-     .main-about-text{
+     /* .main-about-text{
         margin-top: 5em;
-     }
+     } */
 
        /* PRODUCTS PAGE */
-       .img-bottom{
+       /* .img-bottom{
         position: relative;
     }
     .img-top{
@@ -800,17 +802,16 @@ main{
     }
     .main-subscribe{
         height: 8em;
-    }
+    } */
 
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .hero-container, .hero-container-box{
+    /* .hero-container, .hero-container-box{
         height: 95vh;
-        /* justify-items: center; */
         align-items: center;
 
-    }
+    } */
 
     /* .hero-container-box{
         display: grid;
@@ -822,7 +823,7 @@ main{
         place-items: center;
         height: 60em;
      } */
-     .left{
+     /* .left{
         grid-area: left;
         padding: 5em;
        }
@@ -843,14 +844,14 @@ main{
         width: 70%;
         padding: 2em;
 
-     }
+     } */
      /* main info */
      /* .main-about-text{
         margin-top: 5em;
      } */
 
      /* PRODUCTS PAGE */
-    .img-bottom{
+    /* .img-bottom{
         position: relative;
     }
     .img-top{
@@ -861,17 +862,16 @@ main{
     }
     .main-subscribe{
         height: 10em;
-    }
+    } */
 
 
 
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+/* @media only screen and (min-width: 1025px) and (max-width: 1200px) { */
     /* HOME PAGE */
-    .hero-container, .hero-container-box{
+    /* .hero-container, .hero-container-box{
         height: 95vh;
-        /* justify-items: center; */
         align-items: center;
 
     }
@@ -879,15 +879,15 @@ main{
     .right button{
         margin: 2em;
         width: 35%;
-    }
+    } */
 
      /* main info */
-     .main-about-text{
+     /* .main-about-text{
         margin-bottom: 2em;
-     }
+     } */
 
     /* PRODUCTS PAGE */
-    .img-bottom{
+    /* .img-bottom{
         position: relative;
     }
     .img-top{
@@ -905,12 +905,12 @@ main{
     }
     .inner-about h1{
         font-size: 3em;
-    }
+    } */
 
-}
+/* } */
 
-@media only screen and (min-width: 1201px) {
-    .ul-links li a {
+/* @media only screen and (min-width: 1201px) { */
+    /* .ul-links li a {
         font-size: 2em;
     }
     .hero-container-box{
@@ -926,14 +926,14 @@ main{
         width: 35%;
     }
     .box-right{
-        width: 70%;
+        width: 100%;
         padding: 2em;
 
-    }
+    } */
 
     
      /* PRODUCTS PAGE */
-     .img-bottom{
+     /* .img-bottom{
         position: relative;
     }
     .img-top{
@@ -951,6 +951,6 @@ main{
     }
    .inner-about h1{
         font-size: 3em;
-    }
-}
+    } */
+/* } */
 
